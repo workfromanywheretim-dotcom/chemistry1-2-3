@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atoms &amp; Properties of Elements · Visual Chemistry</title>
+<meta name="description" content="Build atoms particle by particle, explore an interactive periodic table, and see why atomic properties repeat in patterns — visual chemistry fundamentals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6M10 3v6.2L5.5 17a2 2 0 001.7 3h9.6a2 2 0 001.7-3L14 9.2V3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-en">Visual Chemistry</span>
+        <span class="brand-sub">See it · Understand it · Apply it</span>
+      </span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main menu">
+      <a href="index.html">Home<span class="lang-th">หน้าแรก</span></a>
+      <a href="lab-safety.html">Lab Safety<span class="lang-th">ความปลอดภัยในห้องปฏิบัติการ</span></a>
+      <a href="atoms-elements.html" class="is-active">Atoms &amp; Elements<span class="lang-th">อะตอมและธาตุ</span></a>
+      <a href="chemical-bonding.html">Chemical Bonding<span class="lang-th">พันธะเคมี</span></a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile menu">
+    <a href="index.html">Home<span class="lang-th">หน้าแรก</span></a>
+    <a href="lab-safety.html">Lab Safety<span class="lang-th">ความปลอดภัยในห้องปฏิบัติการ</span></a>
+    <a href="atoms-elements.html">Atoms &amp; Elements<span class="lang-th">อะตอมและธาตุ</span></a>
+    <a href="chemical-bonding.html">Chemical Bonding<span class="lang-th">พันธะเคมี</span></a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow eyebrow-light">Module 2 of 3<span class="lang-th">บทเรียนที่ 2 จาก 3</span></p>
+      <h1>Atoms &amp; Properties of Elements<span class="lang-th">อะตอมและสมบัติของธาตุ</span></h1>
+      <p class="hero-lead">Every material is built from about 90 naturally occurring building blocks. Build one yourself, then explore why their properties repeat in such a predictable pattern.<span class="lang-th">วัสดุทุกชนิดถูกสร้างขึ้นจากองค์ประกอบพื้นฐานที่เกิดขึ้นตามธรรมชาติประมาณ 90 ชนิด ลองสร้างอะตอมด้วยตัวเอง แล้วสำรวจว่าทำไมสมบัติของธาตุจึงเกิดซ้ำเป็นแบบแผนที่คาดเดาได้</span></p>
+      <div class="hero-actions">
+        <a href="#atom-builder" class="btn btn-primary">Build an atom<span class="lang-th">สร้างอะตอม</span></a>
+        <a href="#periodic-table" class="btn btn-outline-light">Explore the periodic table<span class="lang-th">สำรวจตารางธาตุ</span></a>
+      </div>
+    </div>
+    <div class="card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#fff;">
+      <p class="eyebrow eyebrow-light" style="margin-bottom:.6em;">In this module<span class="lang-th">ในบทเรียนนี้</span></p>
+      <ul style="display:grid;gap:10px;font-size:.92rem;color:rgba(246,250,249,.85);">
+        <li>1. Build-an-atom simulator<span class="lang-th">เครื่องมือจำลองการสร้างอะตอม</span></li>
+        <li>2. Subatomic particles at a glance<span class="lang-th">อนุภาคย่อยของอะตอมโดยสรุป</span></li>
+        <li>3. Interactive periodic table (periods 1–4)<span class="lang-th">ตารางธาตุเชิงโต้ตอบ (คาบ 1–4)</span></li>
+        <li>4. Atomic radius &amp; electronegativity trends<span class="lang-th">แนวโน้มรัศมีอะตอมและอิเล็กโทรเนกาติวิตี</span></li>
+        <li>5. Isotopes and ions<span class="lang-th">ไอโซโทปและไอออน</span></li>
+        <li>6. Self-check quiz<span class="lang-th">แบบทดสอบทวนความเข้าใจ</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ATOM BUILDER -->
+<section id="atom-builder">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">See it first<span class="lang-th">ดูก่อนเลย</span></p>
+      <h2>Build an atom<span class="lang-th">สร้างอะตอม</span></h2>
+      <p>Add or remove protons, neutrons, and electrons and watch the element, mass, and charge update live.<span class="lang-th">เพิ่มหรือลดโปรตอน นิวตรอน และอิเล็กตรอน แล้วดูธาตุ มวล และประจุเปลี่ยนแปลงแบบสด ๆ</span></p>
+    </div>
+    <div class="panel-dark reveal" style="padding:40px 32px;">
+      <div class="atom-builder">
+        <div>
+          <div class="atom-stage" id="atomStage"></div>
+          <div class="atom-readout">
+            <div class="readout-cell"><div class="label">Element<span class="lang-th">ธาตุ</span></div><div class="value" id="rdSymbol">C</div></div>
+            <div class="readout-cell"><div class="label">Name<span class="lang-th">ชื่อ</span></div><div class="value" id="rdName" style="font-size:1rem;">Carbon</div></div>
+            <div class="readout-cell"><div class="label">Atomic number<span class="lang-th">เลขอะตอม</span></div><div class="value" id="rdAtomicNum">6</div></div>
+            <div class="readout-cell"><div class="label">Mass number<span class="lang-th">เลขมวล</span></div><div class="value" id="rdMassNum">12</div></div>
+            <div class="readout-cell" style="grid-column:1/-1;"><div class="label">Overall charge<span class="lang-th">ประจุรวม</span></div><div class="value" id="rdCharge">0</div></div>
+          </div>
+          <p id="rdSummary" style="color:rgba(246,250,249,.85);font-size:.92rem;"></p>
+        </div>
+        <div>
+          <p class="eyebrow eyebrow-light">Add or remove particles<span class="lang-th">เพิ่มหรือลดอนุภาค</span></p>
+          <div class="particle-controls">
+            <div class="particle-row" data-particle="protons">
+              <span class="name"><span class="dot" style="background:#E2604F;"></span>Protons (+)<span class="lang-th">โปรตอน (+)</span></span>
+              <div class="stepper"><button data-step="-1" aria-label="Remove a proton">−</button><span class="count">6</span><button data-step="1" aria-label="Add a proton">+</button></div>
+            </div>
+            <div class="particle-row" data-particle="neutrons">
+              <span class="name"><span class="dot" style="background:#8FA3A8;"></span>Neutrons<span class="lang-th">นิวตรอน</span></span>
+              <div class="stepper"><button data-step="-1" aria-label="Remove a neutron">−</button><span class="count">6</span><button data-step="1" aria-label="Add a neutron">+</button></div>
+            </div>
+            <div class="particle-row" data-particle="electrons">
+              <span class="name"><span class="dot" style="background:#3FA7AE;"></span>Electrons (−)<span class="lang-th">อิเล็กตรอน (−)</span></span>
+              <div class="stepper"><button data-step="-1" aria-label="Remove an electron">−</button><span class="count">6</span><button data-step="1" aria-label="Add an electron">+</button></div>
+            </div>
+          </div>
+          <div class="callout" style="margin-top:20px;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--amber);"><path d="M12 3a6 6 0 00-3 11.2V16h6v-1.8A6 6 0 0012 3z" stroke-linejoin="round"/><path d="M10 19h4M11 21h2" stroke-linecap="round"/></svg>
+            <div><h4 style="color:#fff;">Try this<span class="lang-th">ลองทำดู</span></h4><p style="color:rgba(246,250,249,.8);">Change only the proton count and watch the element name change — atomic number alone defines the element. Then change only electrons to build an ion.<span class="lang-th">เปลี่ยนแค่จำนวนโปรตอนแล้วดูชื่อธาตุเปลี่ยนไป — เลขอะตอมเพียงอย่างเดียวเป็นตัวกำหนดธาตุ จากนั้นลองเปลี่ยนแค่อิเล็กตรอนเพื่อสร้างไอออน</span></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBATOMIC PARTICLES -->
+<section class="section-tight" style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The three building blocks<span class="lang-th">สามองค์ประกอบพื้นฐาน</span></p>
+      <h2>Subatomic particles at a glance<span class="lang-th">อนุภาคย่อยของอะตอมโดยสรุป</span></h2>
+    </div>
+    <div class="card reveal" style="overflow-x:auto;">
+      <table class="compare-table">
+        <tr><th>Particle<span class="lang-th">อนุภาค</span></th><th>Charge<span class="lang-th">ประจุ</span></th><th>Relative mass<span class="lang-th">มวลสัมพัทธ์</span></th><th>Location<span class="lang-th">ตำแหน่ง</span></th></tr>
+        <tr><td><span class="dot" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#E2604F;margin-right:8px;"></span>Proton<span class="lang-th">โปรตอน</span></td><td>+1</td><td>1</td><td>Nucleus<span class="lang-th">นิวเคลียส</span></td></tr>
+        <tr><td><span class="dot" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#8FA3A8;margin-right:8px;"></span>Neutron<span class="lang-th">นิวตรอน</span></td><td>0</td><td>1</td><td>Nucleus<span class="lang-th">นิวเคลียส</span></td></tr>
+        <tr><td><span class="dot" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#3FA7AE;margin-right:8px;"></span>Electron<span class="lang-th">อิเล็กตรอน</span></td><td>−1</td><td>~0.0005 (negligible)<span class="lang-th">~0.0005 (เล็กน้อยมาก)</span></td><td>Surrounding shells<span class="lang-th">วงโคจรรอบนิวเคลียส</span></td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PERIODIC TABLE -->
+<section id="periodic-table">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The same pattern, every time<span class="lang-th">แบบแผนเดิมทุกครั้ง</span></p>
+      <h2>Interactive periodic table<span class="lang-th">ตารางธาตุเชิงโต้ตอบ</span></h2>
+      <p>Periods 1–4 (elements 1–36) — the same s-block / p-block / d-block pattern continues through period 7. Click any element for details.<span class="lang-th">คาบ 1–4 (ธาตุที่ 1–36) — แบบแผน s-block / p-block / d-block เดียวกันนี้ดำเนินต่อไปจนถึงคาบที่ 7 คลิกที่ธาตุใดก็ได้เพื่อดูรายละเอียด</span></p>
+    </div>
+    <div class="reveal">
+      <div class="ptable-wrap">
+        <div class="ptable" id="ptableGrid"></div>
+      </div>
+      <div class="ptable-legend">
+        <span><i class="cat-hydrogen" style="background:var(--cat-hydrogen);"></i>Hydrogen<span class="lang-th">ไฮโดรเจน</span></span>
+        <span><i style="background:var(--cat-alkali);"></i>Alkali metal<span class="lang-th">โลหะแอลคาไล</span></span>
+        <span><i style="background:var(--cat-alkaline);"></i>Alkaline earth metal<span class="lang-th">โลหะแอลคาไลน์เอิร์ท</span></span>
+        <span><i style="background:var(--cat-transition);"></i>Transition metal<span class="lang-th">โลหะแทรนซิชัน</span></span>
+        <span><i style="background:var(--cat-post);"></i>Post-transition metal<span class="lang-th">โลหะหลังแทรนซิชัน</span></span>
+        <span><i style="background:var(--cat-metalloid);"></i>Metalloid<span class="lang-th">ธาตุกึ่งโลหะ</span></span>
+        <span><i style="background:var(--cat-nonmetal);"></i>Reactive nonmetal<span class="lang-th">อโลหะที่ทำปฏิกิริยาได้ดี</span></span>
+        <span><i style="background:var(--cat-halogen);"></i>Halogen<span class="lang-th">แฮโลเจน</span></span>
+        <span><i style="background:var(--cat-noble);"></i>Noble gas<span class="lang-th">แก๊สมีตระกูล</span></span>
+      </div>
+      <div class="ptable-detail" id="ptableDetail"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRENDS -->
+<section style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Why properties repeat<span class="lang-th">ทำไมสมบัติจึงเกิดซ้ำ</span></p>
+      <h2>Periodic trends<span class="lang-th">แนวโน้มตามตารางธาตุ</span></h2>
+      <p>Move across a period and the pull of an increasingly charged nucleus changes atoms in a predictable direction. Move down a group and an extra shell changes them in the opposite way.<span class="lang-th">เมื่อเลื่อนไปตามคาบ แรงดึงดูดของนิวเคลียสที่มีประจุมากขึ้นจะเปลี่ยนอะตอมไปในทิศทางที่คาดเดาได้ เมื่อเลื่อนลงตามหมู่ การมีวงโคจรเพิ่มขึ้นจะเปลี่ยนอะตอมไปในทิศทางตรงข้าม</span></p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <h4 style="font-size:.98rem;">Atomic radius — across Period 3<span class="lang-th">รัศมีอะตอม — ตามคาบที่ 3</span></h4>
+        <p style="color:var(--ink-soft);font-size:.85rem;">More protons pull the same number of shells in tighter, so atoms shrink left to right.<span class="lang-th">โปรตอนที่มากขึ้นดึงวงโคจรจำนวนเท่ากันให้แน่นขึ้น ทำให้อะตอมเล็กลงจากซ้ายไปขวา</span></p>
+        <div id="trendPeriod3Radius" style="margin-top:14px;"></div>
+      </div>
+      <div class="card reveal">
+        <h4 style="font-size:.98rem;">Atomic radius — down Group 1<span class="lang-th">รัศมีอะตอม — ตามหมู่ที่ 1</span></h4>
+        <p style="color:var(--ink-soft);font-size:.85rem;">Each row down adds a whole new electron shell, so atoms get bigger top to bottom.<span class="lang-th">แต่ละแถวที่ลงมาเพิ่มวงโคจรอิเล็กตรอนใหม่ทั้งวง ทำให้อะตอมใหญ่ขึ้นจากบนลงล่าง</span></p>
+        <div id="trendGroup1Radius" style="margin-top:14px;"></div>
+      </div>
+      <div class="card reveal">
+        <h4 style="font-size:.98rem;">Electronegativity — across Period 2<span class="lang-th">อิเล็กโทรเนกาติวิตี — ตามคาบที่ 2</span></h4>
+        <p style="color:var(--ink-soft);font-size:.85rem;">A stronger nuclear pull on the same outer shell makes atoms grab bonding electrons more strongly.<span class="lang-th">แรงดึงดูดของนิวเคลียสที่มากขึ้นบนวงโคจรนอกสุดเดียวกันทำให้อะตอมดึงดูดอิเล็กตรอนพันธะได้แรงขึ้น</span></p>
+        <div id="trendPeriod2Electroneg" style="margin-top:14px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREND EXPLORER -->
+<section class="section-tight" style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">See it move<span class="lang-th">ลองขยับดู</span></p>
+      <h2>Trend explorer<span class="lang-th">เครื่องมือสำรวจแนวโน้ม</span></h2>
+      <p>Slide through elements 1–36 and watch atomic size and electronegativity respond live, point by point.<span class="lang-th">เลื่อนผ่านธาตุที่ 1–36 แล้วดูขนาดอะตอมและอิเล็กโทรเนกาติวิตีเปลี่ยนแปลงแบบสด ๆ ทีละจุด</span></p>
+    </div>
+    <div class="panel-dark reveal" style="padding:36px 32px;">
+      <input type="range" class="range-slider" id="trendSlider" min="1" max="36" value="6" aria-label="Atomic number">
+      <p style="text-align:center;color:var(--amber);font-weight:700;margin:14px 0 0;" id="trendElLabel">—</p>
+      <div class="trend-explorer" style="margin-top:18px;">
+        <div class="trend-size-stage">
+          <div class="trend-size-atom" id="trendSizeAtom"></div>
+        </div>
+        <div>
+          <svg class="trend-graph" id="trendGraph" viewBox="0 0 600 170" preserveAspectRatio="none"></svg>
+          <p style="text-align:center;color:rgba(246,250,249,.7);font-size:.78rem;margin-top:6px;">Atomic radius across elements 1–36 (atomic number on the x-axis)<span class="lang-th">รัศมีอะตอมของธาตุที่ 1–36 (แกน x คือเลขอะตอม)</span></p>
+        </div>
+      </div>
+      <div class="be-energy-readout" style="margin-top:22px;">
+        <div class="readout-cell" style="min-width:140px;"><div class="label">Atomic radius<span class="lang-th">รัศมีอะตอม</span></div><div class="value" id="trendRadiusVal" style="font-size:1.1rem;">—</div></div>
+        <div class="readout-cell" style="min-width:160px;"><div class="label">Electronegativity<span class="lang-th">อิเล็กโทรเนกาติวิตี</span></div><div class="value" id="trendEnVal" style="font-size:1.1rem;">—</div></div>
+      </div>
+      <div id="trendEnMeterWrap" style="margin-top:14px;"></div>
+      <p id="trendExplain" style="color:rgba(246,250,249,.85);font-size:.92rem;margin:18px 0 0;"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ISOTOPES & IONS -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Same element, different numbers<span class="lang-th">ธาตุเดียวกัน ตัวเลขต่างกัน</span></p>
+      <h2>Isotopes and ions<span class="lang-th">ไอโซโทปและไอออน</span></h2>
+    </div>
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3 style="font-size:1.05rem;">Isotopes — same protons, different neutrons<span class="lang-th">ไอโซโทป — โปรตอนเท่ากัน นิวตรอนต่างกัน</span></h3>
+        <div class="grid-2" style="gap:16px;margin-top:1em;">
+          <div class="card" style="text-align:center;background:var(--paper);">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700;color:var(--teal-deep);">¹²C</div>
+            <p style="margin:.4em 0 0;font-size:.85rem;color:var(--ink-soft);">6 protons, 6 neutrons — the common form of carbon, found in all living things.<span class="lang-th">โปรตอน 6 ตัว นิวตรอน 6 ตัว — รูปแบบทั่วไปของคาร์บอนที่พบในสิ่งมีชีวิตทุกชนิด</span></p>
+          </div>
+          <div class="card" style="text-align:center;background:var(--paper);">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700;color:var(--teal-deep);">¹⁴C</div>
+            <p style="margin:.4em 0 0;font-size:.85rem;color:var(--ink-soft);">6 protons, 8 neutrons — a rarer, radioactive isotope used in carbon dating.<span class="lang-th">โปรตอน 6 ตัว นิวตรอน 8 ตัว — ไอโซโทปกัมมันตรังสีที่พบได้น้อยกว่า ใช้ในการหาอายุด้วยคาร์บอน</span></p>
+          </div>
+        </div>
+        <p style="color:var(--ink-soft);font-size:.88rem;margin-top:14px;">Same number of protons means the same chemical behavior — chemistry is driven by electrons, not neutrons. Extra neutrons just add mass (and sometimes radioactivity).<span class="lang-th">จำนวนโปรตอนเท่ากันหมายถึงพฤติกรรมทางเคมีเหมือนกัน — เคมีถูกขับเคลื่อนด้วยอิเล็กตรอน ไม่ใช่นิวตรอน นิวตรอนส่วนเกินเพิ่มเพียงมวล (และบางครั้งความเป็นกัมมันตรังสี)</span></p>
+      </div>
+      <div class="card reveal">
+        <h3 style="font-size:1.05rem;">Ions — same protons, different electrons<span class="lang-th">ไอออน — โปรตอนเท่ากัน อิเล็กตรอนต่างกัน</span></h3>
+        <div class="grid-2" style="gap:16px;margin-top:1em;">
+          <div class="card" style="text-align:center;background:var(--paper);">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700;color:var(--teal-deep);">Na⁺</div>
+            <p style="margin:.4em 0 0;font-size:.85rem;color:var(--ink-soft);">11 protons, 10 electrons. Sodium loses its 1 outer electron to form a stable +1 ion.<span class="lang-th">โปรตอน 11 ตัว อิเล็กตรอน 10 ตัว โซเดียมสูญเสียอิเล็กตรอนวงนอก 1 ตัว เกิดเป็นไอออน +1 ที่เสถียร</span></p>
+          </div>
+          <div class="card" style="text-align:center;background:var(--paper);">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700;color:var(--teal-deep);">Cl⁻</div>
+            <p style="margin:.4em 0 0;font-size:.85rem;color:var(--ink-soft);">17 protons, 18 electrons. Chlorine gains 1 electron to complete its outer shell, forming a stable −1 ion.<span class="lang-th">โปรตอน 17 ตัว อิเล็กตรอน 18 ตัว คลอรีนรับอิเล็กตรอนเพิ่ม 1 ตัวเพื่อเติมวงนอกให้ครบ เกิดเป็นไอออน −1 ที่เสถียร</span></p>
+          </div>
+        </div>
+        <p style="color:var(--ink-soft);font-size:.88rem;margin-top:14px;">That electron handed from sodium to chlorine is exactly what creates an ionic bond — the subject of Module 3.<span class="lang-th">อิเล็กตรอนที่ถูกส่งจากโซเดียมไปยังคลอรีนนี้คือสิ่งที่สร้างพันธะไอออนิก — ซึ่งเป็นเนื้อหาของบทเรียนที่ 3</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" style="background:var(--white);border-top:1px solid var(--line);">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Apply it<span class="lang-th">นำไปใช้</span></p>
+      <h2>Check your understanding<span class="lang-th">ทบทวนความเข้าใจของคุณ</span></h2>
+      <p>Five quick questions — pick an answer to see instant feedback.<span class="lang-th">ห้าคำถามสั้น ๆ — เลือกคำตอบเพื่อดูผลตอบรับทันที</span></p>
+    </div>
+    <div class="quiz reveal">
+
+      <div class="quiz-q">
+        <h4>1. What determines which element an atom is?<span class="lang-th">อะไรเป็นตัวกำหนดว่าอะตอมเป็นธาตุใด</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="true" data-feedback="Right — the atomic number is the number of protons, and that's the one property that defines an element." data-feedback-th="ถูกต้อง — เลขอะตอมคือจำนวนโปรตอน และนี่คือสมบัติเดียวที่กำหนดธาตุ">The number of protons.<span class="lang-th">จำนวนโปรตอน</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — different neutron counts just create different isotopes of the same element." data-feedback-th="ยังไม่ถูกต้อง — จำนวนนิวตรอนที่ต่างกันสร้างเพียงไอโซโทปที่ต่างกันของธาตุเดียวกัน">The number of neutrons.<span class="lang-th">จำนวนนิวตรอน</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — electrons can be gained or lost to form ions without changing the element." data-feedback-th="ยังไม่ถูกต้อง — อิเล็กตรอนสามารถได้รับหรือสูญเสียไปเพื่อสร้างไอออนได้โดยไม่เปลี่ยนธาตุ">The number of electrons.<span class="lang-th">จำนวนอิเล็กตรอน</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — total mass changes between isotopes and ions of the very same element." data-feedback-th="ยังไม่ถูกต้อง — มวลรวมเปลี่ยนแปลงได้ระหว่างไอโซโทปและไอออนของธาตุเดียวกัน">The atom's total mass.<span class="lang-th">มวลรวมของอะตอม</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-q">
+        <h4>2. Two atoms have the same number of protons but a different number of neutrons. What are they?<span class="lang-th">อะตอมสองอะตอมมีจำนวนโปรตอนเท่ากันแต่จำนวนนิวตรอนต่างกัน อะตอมเหล่านี้คืออะไร</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — same proton count means the same element, just a different version of it." data-feedback-th="ยังไม่ถูกต้อง — จำนวนโปรตอนเท่ากันหมายถึงธาตุเดียวกัน เพียงแต่เป็นอีกรูปแบบหนึ่ง">Two different elements.<span class="lang-th">ธาตุสองชนิดที่แตกต่างกัน</span></button>
+          <button class="quiz-option" data-correct="true" data-feedback="Right — same protons, different neutrons is exactly the definition of isotopes." data-feedback-th="ถูกต้อง — โปรตอนเท่ากัน นิวตรอนต่างกัน คือนิยามของไอโซโทปโดยตรง">Isotopes of the same element.<span class="lang-th">ไอโซโทปของธาตุเดียวกัน</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — ions differ in electron count, not neutron count." data-feedback-th="ยังไม่ถูกต้อง — ไอออนแตกต่างกันที่จำนวนอิเล็กตรอน ไม่ใช่จำนวนนิวตรอน">Ions of the same element.<span class="lang-th">ไอออนของธาตุเดียวกัน</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — there's a well-defined relationship here: they're isotopes." data-feedback-th="ยังไม่ถูกต้อง — ที่จริงมีความสัมพันธ์ที่ชัดเจน นั่นคือไอโซโทป">Unrelated atoms.<span class="lang-th">อะตอมที่ไม่เกี่ยวข้องกัน</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-q">
+        <h4>3. A fluorine atom (9 protons, 9 electrons) gains one electron. What does it become?<span class="lang-th">อะตอมฟลูออรีน (โปรตอน 9 ตัว อิเล็กตรอน 9 ตัว) รับอิเล็กตรอนเพิ่มมา 1 ตัว มันจะกลายเป็นอะไร</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — protons (9) no longer equal electrons (10), so it's not neutral anymore." data-feedback-th="ยังไม่ถูกต้อง — โปรตอน (9) ไม่เท่ากับอิเล็กตรอน (10) แล้ว จึงไม่เป็นกลางอีกต่อไป">A neutral atom.<span class="lang-th">อะตอมที่เป็นกลาง</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — a cation has more protons than electrons; this atom now has more electrons." data-feedback-th="ยังไม่ถูกต้อง — ไอออนบวกมีโปรตอนมากกว่าอิเล็กตรอน แต่อะตอมนี้มีอิเล็กตรอนมากกว่า">A cation (positive ion).<span class="lang-th">ไอออนบวก</span></button>
+          <button class="quiz-option" data-correct="true" data-feedback="Right — 9 protons and 10 electrons gives a net charge of 1−, making it the fluoride anion, F⁻." data-feedback-th="ถูกต้อง — โปรตอน 9 ตัวและอิเล็กตรอน 10 ตัวให้ประจุรวม 1− ทำให้เป็นไอออนลบฟลูออไรด์ F⁻">An anion with a 1− charge.<span class="lang-th">ไอออนลบที่มีประจุ 1−</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — gaining or losing electrons never changes which element it is; the proton count stayed at 9." data-feedback-th="ยังไม่ถูกต้อง — การได้รับหรือสูญเสียอิเล็กตรอนไม่เปลี่ยนธาตุ จำนวนโปรตอนยังคงเป็น 9">A different element.<span class="lang-th">ธาตุที่แตกต่างออกไป</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-q">
+        <h4>4. Where on the periodic table would you expect the largest atomic radius?<span class="lang-th">ตำแหน่งใดในตารางธาตุที่คุณคาดว่าจะมีรัศมีอะตอมใหญ่ที่สุด</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — the top-right is where atoms are smallest, since they have few shells and a strong nuclear pull." data-feedback-th="ยังไม่ถูกต้อง — มุมบนขวาเป็นที่ที่อะตอมเล็กที่สุด เพราะมีวงโคจรน้อยและแรงดึงดูดของนิวเคลียสที่แรง">Top-right corner.<span class="lang-th">มุมบนขวา</span></button>
+          <button class="quiz-option" data-correct="true" data-feedback="Right — radius increases down a group (more shells) and decreases across a period (stronger pull), so bottom-left is largest." data-feedback-th="ถูกต้อง — รัศมีเพิ่มขึ้นเมื่อลงตามหมู่ (วงโคจรมากขึ้น) และลดลงเมื่อไปตามคาบ (แรงดึงดูดมากขึ้น) ดังนั้นมุมล่างซ้ายจึงใหญ่ที่สุด">Bottom-left corner.<span class="lang-th">มุมล่างซ้าย</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — there's no special reason for the middle of the table to be largest." data-feedback-th="ยังไม่ถูกต้อง — ไม่มีเหตุผลพิเศษที่ทำให้กลางตารางมีขนาดใหญ่ที่สุด">Exactly in the middle.<span class="lang-th">ตรงกลางพอดี</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — radius actually follows a very predictable, repeating pattern." data-feedback-th="ยังไม่ถูกต้อง — รัศมีอะตอมเป็นไปตามแบบแผนที่คาดเดาได้และเกิดซ้ำอย่างชัดเจน">It's random across the table.<span class="lang-th">เป็นแบบสุ่มไปทั่วตาราง</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-q">
+        <h4>5. Why do elements in the same group (column) react in similar ways?<span class="lang-th">ทำไมธาตุในหมู่เดียวกัน (คอลัมน์เดียวกัน) จึงทำปฏิกิริยาในลักษณะที่คล้ายกัน</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — atomic mass actually changes a lot down a group." data-feedback-th="ยังไม่ถูกต้อง — มวลอะตอมเปลี่ยนแปลงไปมากเมื่อลงตามหมู่">They have the same atomic mass.<span class="lang-th">มีมวลอะตอมเท่ากัน</span></button>
+          <button class="quiz-option" data-correct="true" data-feedback="Right — same group means the same number of valence (outer-shell) electrons, which is what drives chemical behavior." data-feedback-th="ถูกต้อง — หมู่เดียวกันหมายถึงจำนวนอิเล็กตรอนวงนอกเท่ากัน ซึ่งเป็นตัวขับเคลื่อนพฤติกรรมทางเคมี">They have the same number of valence electrons.<span class="lang-th">มีจำนวนอิเล็กตรอนวงนอกเท่ากัน</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — discovery date has nothing to do with chemical behavior." data-feedback-th="ยังไม่ถูกต้อง — วันที่ค้นพบไม่มีความเกี่ยวข้องกับพฤติกรรมทางเคมี">They were discovered in the same year.<span class="lang-th">ถูกค้นพบในปีเดียวกัน</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — neutron count varies and doesn't drive chemical reactivity." data-feedback-th="ยังไม่ถูกต้อง — จำนวนนิวตรอนแตกต่างกันและไม่ใช่ตัวขับเคลื่อนความสามารถในการทำปฏิกิริยาทางเคมี">They have the same number of neutrons.<span class="lang-th">มีจำนวนนิวตรอนเท่ากัน</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-score" data-quiz-score></div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="module-nav">
+    <a href="lab-safety.html">← Back: Lab Safety &amp; Skills<span class="lang-th">ย้อนกลับ: ความปลอดภัยและทักษะในห้องปฏิบัติการ</span></a>
+    <a href="chemical-bonding.html">Next: Chemical Bonding →<span class="lang-th">ถัดไป: พันธะเคมี →</span></a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>Visual Chemistry — Module 2: Atoms &amp; Properties of Elements<span class="lang-th">ชุดสื่อการสอนวิชาเคมี — บทเรียนที่ 2: อะตอมและสมบัติของธาตุ</span></span>
+    <span><a href="chemical-bonding.html">Continue to Module 3 →<span class="lang-th">ไปต่อบทเรียนที่ 3 →</span></a></span>
+  </div>
+</footer>
+
+<script src="assets/elements-data.js"></script>
+<script src="assets/atoms.js"></script>
+<script src="assets/shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab Safety &amp; Skills · Visual Chemistry</title>
+<meta name="description" content="Hazard pictograms, PPE, core lab equipment, essential techniques, and emergency procedures — visual lab safety fundamentals for chemistry students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6M10 3v6.2L5.5 17a2 2 0 001.7 3h9.6a2 2 0 001.7-3L14 9.2V3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-en">Visual Chemistry</span>
+        <span class="brand-sub">See it · Understand it · Apply it</span>
+      </span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main menu">
+      <a href="index.html">Home<span class="lang-th">หน้าแรก</span></a>
+      <a href="lab-safety.html" class="is-active">Lab Safety<span class="lang-th">ความปลอดภัยในห้องปฏิบัติการ</span></a>
+      <a href="atoms-elements.html">Atoms &amp; Elements<span class="lang-th">อะตอมและธาตุ</span></a>
+      <a href="chemical-bonding.html">Chemical Bonding<span class="lang-th">พันธะเคมี</span></a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile menu">
+    <a href="index.html">Home<span class="lang-th">หน้าแรก</span></a>
+    <a href="lab-safety.html">Lab Safety<span class="lang-th">ความปลอดภัยในห้องปฏิบัติการ</span></a>
+    <a href="atoms-elements.html">Atoms &amp; Elements<span class="lang-th">อะตอมและธาตุ</span></a>
+    <a href="chemical-bonding.html">Chemical Bonding<span class="lang-th">พันธะเคมี</span></a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow eyebrow-light">Module 1 of 3<span class="lang-th">บทเรียนที่ 1 จาก 3</span></p>
+      <h1>Lab Safety &amp; Skills<span class="lang-th">ความปลอดภัยและทักษะในห้องปฏิบัติการ</span></h1>
+      <p class="hero-lead">Before any chemistry happens, you need to read a hazard label, suit up correctly, recognize the equipment in front of you, and know what to do if something goes wrong. Tap through each section below.<span class="lang-th">ก่อนทำการทดลองเคมีใด ๆ คุณต้องอ่านป้ายแสดงอันตราย แต่งกายป้องกันให้ถูกต้อง รู้จักอุปกรณ์ที่อยู่ตรงหน้า และรู้ว่าต้องทำอย่างไรหากเกิดเหตุผิดพลาด แตะดูแต่ละส่วนด้านล่าง</span></p>
+      <div class="hero-actions">
+        <a href="#hazards" class="btn btn-primary">Start with hazard symbols<span class="lang-th">เริ่มจากสัญลักษณ์อันตราย</span></a>
+        <a href="#quiz" class="btn btn-outline-light">Jump to the quiz<span class="lang-th">ไปที่แบบทดสอบ</span></a>
+      </div>
+    </div>
+    <div class="card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#fff;">
+      <p class="eyebrow eyebrow-light" style="margin-bottom:.6em;">In this module<span class="lang-th">ในบทเรียนนี้</span></p>
+      <ul style="display:grid;gap:10px;font-size:.92rem;color:rgba(246,250,249,.85);">
+        <li>1. Hazard pictograms — what the symbols on a bottle actually mean<span class="lang-th">1. สัญลักษณ์อันตราย — สัญลักษณ์บนขวดหมายความว่าอะไรกันแน่</span></li>
+        <li>2. Personal protective equipment (PPE)<span class="lang-th">2. อุปกรณ์ป้องกันส่วนบุคคล (PPE)</span></li>
+        <li>3. Core equipment and how it's used<span class="lang-th">3. อุปกรณ์พื้นฐานและวิธีใช้งาน</span></li>
+        <li>4. Essential techniques: measuring, heating, lighting a burner<span class="lang-th">4. เทคนิคที่จำเป็น: การตวง การให้ความร้อน การจุดตะเกียง</span></li>
+        <li>5. Emergency procedures<span class="lang-th">5. ขั้นตอนฉุกเฉิน</span></li>
+        <li>6. Self-check quiz<span class="lang-th">6. แบบทดสอบตรวจสอบตัวเอง</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HAZARD PICTOGRAMS -->
+<section id="hazards">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Read before you touch anything<span class="lang-th">อ่านก่อนสัมผัสสิ่งใด</span></p>
+      <h2>Hazard pictograms<span class="lang-th">สัญลักษณ์อันตราย</span></h2>
+      <p>These standardized symbols (from the Globally Harmonized System, GHS) appear on chemical labels and safety data sheets. Tap a card to reveal what it means.<span class="lang-th">สัญลักษณ์มาตรฐานเหล่านี้ (จากระบบสากลที่เรียกว่า GHS) ปรากฏอยู่บนป้ายเคมีและเอกสารข้อมูลความปลอดภัย แตะที่การ์ดเพื่อดูความหมาย</span></p>
+    </div>
+    <div class="grid-4">
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#E2604F" stroke-width="2"><path d="M24 6c-7 6-12 12-12 19a12 12 0 0024 0c0-7-5-13-12-19z" stroke-linejoin="round"/><path d="M24 22c-3 3-4.5 5.5-4.5 8a4.5 4.5 0 009 0c0-2.5-1.5-5-4.5-8z" fill="#E2604F"/></svg>
+            <h4>Flammable<span class="lang-th">ไวไฟ</span></h4>
+            <p class="tap-hint">Tap to reveal<span class="lang-th">แตะเพื่อดูคำตอบ</span></p>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>Flammable<span class="lang-th">ไวไฟ</span></h4>
+            <p>Catches fire easily from a spark, flame, or heat.<span class="lang-th">ติดไฟได้ง่ายจากประกายไฟ เปลวไฟ หรือความร้อน</span></p>
+            <p><strong>Examples:</strong> ethanol, acetone, hydrogen gas<span class="lang-th"><strong>ตัวอย่าง:</strong> เอทานอล อะซิโตน แก๊สไฮโดรเจน</span></p>
+            <p><strong>Precaution:</strong> keep away from open flames; never heat directly over a Bunsen burner unless instructed.<span class="lang-th"><strong>ข้อควรระวัง:</strong> เก็บให้ห่างจากเปลวไฟ ห้ามให้ความร้อนโดยตรงบนตะเกียงบุนเสนเว้นแต่ได้รับคำสั่ง</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#E2604F" stroke-width="2"><path d="M16 8h6v10l-4 6c-2 3-1 8 3 8" stroke-linecap="round"/><path d="M30 8h6v6l-3 4" stroke-linecap="round"/><path d="M14 40c0-3 2-5 5-5h2c2 0 3-2 2-4" stroke-linecap="round"/></svg>
+            <h4>Corrosive<span class="lang-th">กัดกร่อน</span></h4>
+            <p class="tap-hint">Tap to reveal<span class="lang-th">แตะเพื่อดูคำตอบ</span></p>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>Corrosive<span class="lang-th">กัดกร่อน</span></h4>
+            <p>Causes severe skin burns and eye damage; can eat through metal.<span class="lang-th">ทำให้ผิวหนังไหม้รุนแรงและทำลายดวงตา สามารถกัดกร่อนโลหะได้</span></p>
+            <p><strong>Examples:</strong> concentrated HCl, NaOH solution, H₂SO₄<span class="lang-th"><strong>ตัวอย่าง:</strong> กรด HCl เข้มข้น สารละลาย NaOH, H₂SO₄</span></p>
+            <p><strong>Precaution:</strong> wear gloves and goggles; rinse any spill on skin with water immediately.<span class="lang-th"><strong>ข้อควรระวัง:</strong> สวมถุงมือและแว่นตานิรภัย หากหกเปื้อนผิวหนังให้ล้างด้วยน้ำทันที</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#E2604F" stroke-width="2"><circle cx="24" cy="24" r="16"/><circle cx="18" cy="20" r="2.6" fill="#E2604F" stroke="none"/><circle cx="30" cy="20" r="2.6" fill="#E2604F" stroke="none"/><path d="M16 30c2-3 14-3 16 0" stroke-linecap="round"/><path d="M10 12l5 5M38 12l-5 5" stroke-linecap="round"/></svg>
+            <h4>Toxic<span class="lang-th">เป็นพิษ</span></h4>
+            <p class="tap-hint">Tap to reveal<span class="lang-th">แตะเพื่อดูคำตอบ</span></p>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>Toxic (acute)<span class="lang-th">เป็นพิษ (เฉียบพลัน)</span></h4>
+            <p>Can cause serious harm or death from a small dose if swallowed, inhaled, or absorbed through skin.<span class="lang-th">อาจก่อให้เกิดอันตรายรุนแรงหรือเสียชีวิตได้จากปริมาณเพียงเล็กน้อย หากกลืน สูดดม หรือดูดซึมผ่านผิวหนัง</span></p>
+            <p><strong>Examples:</strong> methanol, potassium cyanide, mercury compounds<span class="lang-th"><strong>ตัวอย่าง:</strong> เมทานอล โพแทสเซียมไซยาไนด์ สารประกอบปรอท</span></p>
+            <p><strong>Precaution:</strong> never taste or directly smell a chemical; use a fume hood; wash hands after handling.<span class="lang-th"><strong>ข้อควรระวัง:</strong> ห้ามชิมหรือดมสารเคมีโดยตรง ใช้ตู้ดูดควัน และล้างมือหลังสัมผัส</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#E2604F" stroke-width="2"><path d="M24 8L4 40h40L24 8z" stroke-linejoin="round"/><line x1="24" y1="20" x2="24" y2="29" stroke-linecap="round"/><circle cx="24" cy="34" r="1.4" fill="#E2604F" stroke="none"/></svg>
+            <h4>Irritant / Harmful<span class="lang-th">ระคายเคือง / เป็นอันตราย</span></h4>
+            <p class="tap-hint">Tap to reveal<span class="lang-th">แตะเพื่อดูคำตอบ</span></p>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>Irritant / Harmful<span class="lang-th">ระคายเคือง / เป็นอันตราย</span></h4>
+            <p>Causes skin, eye, or respiratory irritation — less severe than "toxic" or "corrosive," but still needs care.<span class="lang-th">ทำให้ผิวหนัง ดวงตา หรือระบบทางเดินหายใจระคายเคือง — รุนแรงน้อยกว่า "เป็นพิษ" หรือ "กัดกร่อน" แต่ก็ยังต้องระมัดระวัง</span></p>
+            <p><strong>Examples:</strong> dilute ammonia, copper sulfate solution<span class="lang-th"><strong>ตัวอย่าง:</strong> แอมโมเนียเจือจาง สารละลายคอปเปอร์ซัลเฟต</span></p>
+            <p><strong>Precaution:</strong> avoid skin contact, wear gloves, work in a ventilated room.<span class="lang-th"><strong>ข้อควรระวัง:</strong> หลีกเลี่ยงการสัมผัสผิวหนัง สวมถุงมือ และทำงานในห้องที่มีการระบายอากาศดี</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#E2604F" stroke-width="2"><circle cx="24" cy="17" r="6"/><path d="M14 40c0-7 4.5-11 10-11s10 4 10 11" stroke-linecap="round"/><path d="M24 8l3 5-3 5-3-5z" fill="#E2604F" stroke="none"/></svg>
+            <h4>Health hazard<span class="lang-th">อันตรายต่อสุขภาพ</span></h4>
+            <p class="tap-hint">Tap to reveal<span class="lang-th">แตะเพื่อดูคำตอบ</span></p>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>Health hazard (chronic)<span class="lang-th">อันตรายต่อสุขภาพ (เรื้อรัง)</span></h4>
+            <p>May cause long-term organ damage, cancer, or reproductive harm with repeated exposure.<span class="lang-th">อาจทำให้อวัยวะเสียหายในระยะยาว เป็นมะเร็ง หรือเป็นอันตรายต่อระบบสืบพันธุ์หากสัมผัสซ้ำ ๆ</span></p>
+            <p><strong>Examples:</strong> benzene, chloroform<span class="lang-th"><strong>ตัวอย่าง:</strong> เบนซีน คลอโรฟอร์ม</span></p>
+            <p><strong>Precaution:</strong> use in a fume hood, minimize exposure time, follow disposal rules exactly.<span class="lang-th"><strong>ข้อควรระวัง:</strong> ใช้ในตู้ดูดควัน ลดเวลาในการสัมผัส และปฏิบัติตามกฎการกำจัดอย่างเคร่งครัด</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#E2604F" stroke-width="2"><circle cx="24" cy="24" r="16"/><path d="M24 14c-3 3-4.5 5.5-4.5 8a4.5 4.5 0 009 0c0-2.5-1.5-5-4.5-8z" fill="#E2604F"/></svg>
+            <h4>Oxidizer<span class="lang-th">สารออกซิไดซ์</span></h4>
+            <p class="tap-hint">Tap to reveal<span class="lang-th">แตะเพื่อดูคำตอบ</span></p>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>Oxidizer<span class="lang-th">สารออกซิไดซ์</span></h4>
+            <p>Provides oxygen to a fire, making other materials burn more intensely.<span class="lang-th">เพิ่มออกซิเจนให้กับไฟ ทำให้วัสดุอื่นเผาไหม้รุนแรงขึ้น</span></p>
+            <p><strong>Examples:</strong> concentrated hydrogen peroxide, potassium permanganate<span class="lang-th"><strong>ตัวอย่าง:</strong> ไฮโดรเจนเปอร์ออกไซด์เข้มข้น โพแทสเซียมเปอร์แมงกาเนต</span></p>
+            <p><strong>Precaution:</strong> store and use away from flammable materials and heat sources.<span class="lang-th"><strong>ข้อควรระวัง:</strong> เก็บและใช้ให้ห่างจากวัสดุไวไฟและแหล่งความร้อน</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#E2604F" stroke-width="2"><rect x="17" y="8" width="14" height="32" rx="6"/><line x1="17" y1="18" x2="31" y2="18"/></svg>
+            <h4>Compressed gas<span class="lang-th">แก๊สอัดความดัน</span></h4>
+            <p class="tap-hint">Tap to reveal<span class="lang-th">แตะเพื่อดูคำตอบ</span></p>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>Compressed gas<span class="lang-th">แก๊สอัดความดัน</span></h4>
+            <p>Gas stored under pressure; the cylinder can rupture or explode if heated or damaged.<span class="lang-th">แก๊สที่เก็บไว้ภายใต้ความดันสูง ถังอาจแตกหรือระเบิดได้หากถูกความร้อนหรือเสียหาย</span></p>
+            <p><strong>Examples:</strong> nitrogen, oxygen, propane cylinders<span class="lang-th"><strong>ตัวอย่าง:</strong> ถังไนโตรเจน ออกซิเจน โพรเพน</span></p>
+            <p><strong>Precaution:</strong> store upright, secure with a strap or chain, keep away from heat.<span class="lang-th"><strong>ข้อควรระวัง:</strong> เก็บในแนวตั้ง ยึดให้แน่นด้วยสายรัดหรือโซ่ และเก็บให้ห่างจากความร้อน</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <svg viewBox="0 0 48 48" fill="none" stroke="#E2604F" stroke-width="2"><path d="M24 10c4 6 4 10 0 14-4-4-4-8 0-14z" fill="#E2604F"/><path d="M14 38c4-10 8-14 10-14s6 4 10 14" stroke-linecap="round"/><line x1="10" y1="40" x2="38" y2="40" stroke-linecap="round"/></svg>
+            <h4>Environmental hazard<span class="lang-th">อันตรายต่อสิ่งแวดล้อม</span></h4>
+            <p class="tap-hint">Tap to reveal<span class="lang-th">แตะเพื่อดูคำตอบ</span></p>
+          </div>
+          <div class="flip-face flip-back">
+            <h4>Environmental hazard<span class="lang-th">อันตรายต่อสิ่งแวดล้อม</span></h4>
+            <p>Toxic to aquatic life or the wider environment if released.<span class="lang-th">เป็นพิษต่อสิ่งมีชีวิตในน้ำหรือสิ่งแวดล้อมโดยรวมหากถูกปล่อยออกมา</span></p>
+            <p><strong>Examples:</strong> some heavy-metal salts, certain solvents<span class="lang-th"><strong>ตัวอย่าง:</strong> เกลือโลหะหนักบางชนิด ตัวทำละลายบางประเภท</span></p>
+            <p><strong>Precaution:</strong> never pour down the drain — dispose of through proper chemical waste channels.<span class="lang-th"><strong>ข้อควรระวัง:</strong> ห้ามทิ้งลงท่อระบายน้ำ — กำจัดผ่านช่องทางของเสียเคมีที่ถูกต้อง</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PPE -->
+<section style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="container grid-2">
+    <div class="reveal">
+      <p class="eyebrow">Suit up first<span class="lang-th">แต่งกายป้องกันก่อนเริ่ม</span></p>
+      <h2>Personal protective equipment<span class="lang-th">อุปกรณ์ป้องกันส่วนบุคคล</span></h2>
+      <p style="color:var(--ink-soft);">Tap each numbered point on the figure to see what it protects and why it matters.<span class="lang-th">แตะที่จุดตัวเลขแต่ละจุดบนรูปเพื่อดูว่าป้องกันอะไรและสำคัญอย่างไร</span></p>
+      <div class="hotspot-wrap">
+        <svg viewBox="0 0 200 400" aria-hidden="true">
+          <rect x="78" y="258" width="18" height="98" rx="6" fill="#CFEDEE" stroke="#0B3D45" stroke-width="2"/>
+          <rect x="104" y="258" width="18" height="98" rx="6" fill="#CFEDEE" stroke="#0B3D45" stroke-width="2"/>
+          <rect x="68" y="354" width="34" height="16" rx="6" fill="#16242B"/>
+          <rect x="98" y="354" width="34" height="16" rx="6" fill="#16242B"/>
+          <path d="M70 90 L60 258 L140 258 L130 90 Z" fill="#FFFFFF" stroke="#0B3D45" stroke-width="2"/>
+          <path d="M85 90 L100 128 L115 90" fill="none" stroke="#0B3D45" stroke-width="2"/>
+          <rect x="38" y="95" width="22" height="118" rx="10" fill="#FFFFFF" stroke="#0B3D45" stroke-width="2" transform="rotate(8 51 95)"/>
+          <rect x="140" y="95" width="22" height="118" rx="10" fill="#FFFFFF" stroke="#0B3D45" stroke-width="2" transform="rotate(-8 149 95)"/>
+          <circle cx="46" cy="220" r="14" fill="#3FA7AE" stroke="#0B3D45" stroke-width="1.5"/>
+          <circle cx="156" cy="220" r="14" fill="#3FA7AE" stroke="#0B3D45" stroke-width="1.5"/>
+          <rect x="92" y="62" width="16" height="20" fill="#F2C9A0"/>
+          <circle cx="100" cy="45" r="30" fill="#F2C9A0" stroke="#0B3D45" stroke-width="2"/>
+          <path d="M100 16 Q114 6 120 18" fill="none" stroke="#16242B" stroke-width="3" stroke-linecap="round"/>
+          <rect x="76" y="37" width="48" height="17" rx="8" fill="rgba(63,167,174,.55)" stroke="#0B3D45" stroke-width="2"/>
+        </svg>
+        <button class="hotspot" style="top:3%;left:58%;" data-title="Tied-back hair" data-note="Loose hair can fall into an open flame or get caught in equipment — tying it back keeps it safely out of the way." data-title-th="มัดผมให้เรียบร้อย" data-note-th="ผมที่ปล่อยสยายอาจตกลงไปในเปลวไฟหรือพันกับอุปกรณ์ได้ การมัดผมไว้จะช่วยให้ปลอดภัยและไม่กีดขวาง">1</button>
+        <button class="hotspot" style="top:10%;left:50%;" data-title="Safety goggles" data-note="Splash-proof goggles seal around the eyes to block chemical splashes and flying debris from every angle — regular glasses don't protect the sides." data-title-th="แว่นตานิรภัย" data-note-th="แว่นตานิรภัยกันสารเคมีกระเด็นแนบรอบดวงตา ป้องกันสารเคมีและเศษวัสดุที่กระเด็นมาจากทุกมุม ส่วนแว่นสายตาธรรมดาไม่สามารถป้องกันด้านข้างได้">2</button>
+        <button class="hotspot" style="top:38%;left:50%;" data-title="Lab coat / apron" data-note="A coat covers skin and clothing and can be stripped off quickly if a chemical spills on it, limiting contact time." data-title-th="เสื้อกาวน์ / ผ้ากันเปื้อน" data-note-th="เสื้อกาวน์ปกคลุมผิวหนังและเสื้อผ้า และสามารถถอดออกได้รวดเร็วหากมีสารเคมีหกเปื้อน ช่วยลดเวลาที่ผิวสัมผัสกับสารเคมี">3</button>
+        <button class="hotspot" style="top:54%;left:23%;" data-title="Chemical-resistant gloves" data-note="Gloves (commonly nitrile) protect skin from corrosive or toxic substances — the right material matters, since some chemicals soak through latex." data-title-th="ถุงมือทนสารเคมี" data-note-th="ถุงมือ (ส่วนใหญ่เป็นไนไตรล์) ป้องกันผิวหนังจากสารกัดกร่อนหรือสารพิษ — วัสดุที่ถูกต้องสำคัญมาก เพราะสารเคมีบางชนิดสามารถซึมผ่านลาเทกซ์ได้">4</button>
+        <button class="hotspot" style="top:90%;left:50%;" data-title="Closed-toe shoes" data-note="Fully enclosed shoes protect feet from spills and dropped glassware. Sandals and open-toed shoes are never allowed in a working lab." data-title-th="รองเท้าหุ้มส้น" data-note-th="รองเท้าหุ้มปิดมิดชิดปกป้องเท้าจากสารเคมีหกและเครื่องแก้วที่ตกหล่น ห้ามสวมรองเท้าแตะหรือรองเท้าเปิดปลายเท้าในห้องปฏิบัติการโดยเด็ดขาด">5</button>
+        <div class="hotspot-note">Tap a numbered point on the figure to see why it matters.<span class="lang-th">แตะที่จุดตัวเลขบนรูปเพื่อดูว่าทำไมจึงสำคัญ</span></div>
+      </div>
+    </div>
+    <div class="card reveal" style="align-self:start;">
+      <p class="eyebrow">Know before you start<span class="lang-th">รู้ก่อนเริ่มลงมือ</span></p>
+      <h3>The Safety Data Sheet (SDS)<span class="lang-th">เอกสารข้อมูลความปลอดภัย (SDS)</span></h3>
+      <p style="color:var(--ink-soft);">Every chemical container should be traceable to a Safety Data Sheet — a document listing its hazards, safe handling steps, storage requirements, and first-aid measures.<span class="lang-th">ภาชนะบรรจุสารเคมีทุกชนิดควรตรวจสอบกลับไปยังเอกสารข้อมูลความปลอดภัยได้ — เอกสารที่ระบุอันตราย ขั้นตอนการจัดการอย่างปลอดภัย ข้อกำหนดการเก็บรักษา และมาตรการปฐมพยาบาล</span></p>
+      <div class="callout" style="margin-top:1em;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z" stroke-linejoin="round"/><path d="M14 3v5h5M9 13h6M9 17h6" stroke-linecap="round"/></svg>
+        <div>
+          <h4>Before opening any unfamiliar bottle<span class="lang-th">ก่อนเปิดขวดที่ไม่คุ้นเคย</span></h4>
+          <p>Check its pictograms and SDS for the hazards, the correct PPE, and what to do if it spills — not after something goes wrong.<span class="lang-th">ตรวจสอบสัญลักษณ์และ SDS เพื่อดูอันตราย อุปกรณ์ป้องกันที่ถูกต้อง และวิธีจัดการหากหกเปื้อน — อย่าตรวจสอบหลังจากเกิดเหตุผิดพลาดไปแล้ว</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Know your tools<span class="lang-th">รู้จักเครื่องมือของคุณ</span></p>
+      <h2>Core lab equipment<span class="lang-th">อุปกรณ์ห้องปฏิบัติการพื้นฐาน</span></h2>
+      <p>The same handful of tools shows up in almost every experiment. Knowing what each one is actually for prevents a lot of avoidable mistakes.<span class="lang-th">เครื่องมือกลุ่มเดียวกันนี้ปรากฏในการทดลองเกือบทุกครั้ง การรู้ว่าแต่ละชิ้นใช้ทำอะไรจริง ๆ ช่วยป้องกันความผิดพลาดที่หลีกเลี่ยงได้มากมาย</span></p>
+    </div>
+    <div class="grid-4">
+      <div class="equip-card reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 6h20M16 6v10l-7 18a3 3 0 003 4h24a3 3 0 003-4l-7-18V6" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 30h22" stroke-linecap="round"/></svg>
+        <h4>Beaker<span class="lang-th">บีกเกอร์</span></h4>
+        <p>Mixing or holding liquids when an exact volume isn't needed.<span class="lang-th">ใช้ผสมหรือบรรจุของเหลวเมื่อไม่จำเป็นต้องวัดปริมาตรแม่นยำ</span></p>
+      </div>
+      <div class="equip-card reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6h8M21 6v9L8 38a3 3 0 002.7 4.3h26.6A3 3 0 0040 38L27 15V6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h4>Erlenmeyer flask<span class="lang-th">ขวดรูปชมพู่</span></h4>
+        <p>Swirling and mixing solutions — the narrow neck cuts splashing and evaporation.<span class="lang-th">ใช้เขย่าและผสมสารละลาย — คอขวดที่แคบช่วยลดการกระเด็นและการระเหย</span></p>
+      </div>
+      <div class="equip-card reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 5h12M19 5v36a2 2 0 002 2h6a2 2 0 002-2V5" stroke-linecap="round" stroke-linejoin="round"/><line x1="19" y1="14" x2="24" y2="14"/><line x1="19" y1="22" x2="24" y2="22"/><line x1="19" y1="30" x2="24" y2="30"/></svg>
+        <h4>Graduated cylinder<span class="lang-th">กระบอกตวง</span></h4>
+        <p>Measuring a specific liquid volume precisely, using the fine markings on its side.<span class="lang-th">ใช้วัดปริมาตรของเหลวอย่างแม่นยำ โดยอาศัยขีดมาตราส่วนละเอียดที่ด้านข้าง</span></p>
+      </div>
+      <div class="equip-card reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 4h10M20 4v26a4 4 0 008 0V4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h4>Test tube<span class="lang-th">หลอดทดลอง</span></h4>
+        <p>Small-scale reactions, heating small samples, and observing color or gas changes.<span class="lang-th">ใช้สำหรับปฏิกิริยาขนาดเล็ก ให้ความร้อนกับตัวอย่างเล็ก ๆ และสังเกตการเปลี่ยนแปลงของสีหรือแก๊ส</span></p>
+      </div>
+      <div class="equip-card reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 30c4 0 7-2.5 7-6 0-2.6-2-4.4-3.4-6.4-1-1.4-1-2.8 0-4.6-2.6 1-4.6 3-4.6 5.6 0 1.6.8 2.6 0 4-1-1-1.6-2.4-1.6-4-2 1.6-3.4 4-3.4 6.4 0 3.4 2 5 5 5z" fill="currentColor" stroke="none"/><rect x="16" y="30" width="16" height="6" rx="1"/><rect x="13" y="36" width="22" height="6" rx="1"/></svg>
+        <h4>Bunsen burner<span class="lang-th">ตะเกียงบุนเสน</span></h4>
+        <p>Producing an open flame for heating, sterilizing, and combustion tests.<span class="lang-th">สร้างเปลวไฟเปิดสำหรับให้ความร้อน การฆ่าเชื้อ และการทดสอบการเผาไหม้</span></p>
+      </div>
+      <div class="equip-card reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 6l8 16M32 6l-8 16M24 22v20" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 44c2-4 6-4 10-4s8 0 10 4" stroke-linecap="round"/></svg>
+        <h4>Tongs / test-tube clamp<span class="lang-th">คีม / ที่จับหลอดทดลอง</span></h4>
+        <p>Holding hot glassware safely — glass gets dangerously hot before it looks any different.<span class="lang-th">ใช้จับเครื่องแก้วที่ร้อนอย่างปลอดภัย — แก้วร้อนถึงระดับอันตรายก่อนที่จะดูแตกต่างไปจากปกติ</span></p>
+      </div>
+      <div class="equip-card reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6h6v10l-5 8a6 6 0 1010 0l-5-8V6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 24a3 3 0 003 6" stroke-linecap="round"/></svg>
+        <h4>Wash bottle<span class="lang-th">ขวดล้าง</span></h4>
+        <p>Rinsing glassware or diluting a solution with a controlled stream of distilled water.<span class="lang-th">ใช้ล้างเครื่องแก้วหรือเจือจางสารละลายด้วยน้ำกลั่นที่ฉีดออกมาอย่างควบคุมได้</span></p>
+      </div>
+      <div class="equip-card reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="32" width="32" height="8" rx="2"/><line x1="24" y1="32" x2="24" y2="10"/><path d="M12 10h24M12 10l-4 12h8l-4-12zM36 10l-4 12h8l-4-12z" stroke-linejoin="round"/></svg>
+        <h4>Balance<span class="lang-th">เครื่องชั่ง</span></h4>
+        <p>Measuring the mass of a sample accurately before a reaction.<span class="lang-th">ใช้ชั่งมวลของตัวอย่างอย่างแม่นยำก่อนทำปฏิกิริยา</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE SKILLS -->
+<section style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Practice these until they're automatic<span class="lang-th">ฝึกฝนจนทำได้โดยอัตโนมัติ</span></p>
+      <h2>Core techniques<span class="lang-th">เทคนิคพื้นฐาน</span></h2>
+    </div>
+    <div class="tab-group reveal">
+      <div class="tabs">
+        <button class="tab-btn is-active" data-tab="meniscus">Reading a meniscus<span class="lang-th">การอ่านเมนิสคัส</span></button>
+        <button class="tab-btn" data-tab="burner">Lighting a Bunsen burner<span class="lang-th">การจุดตะเกียงบุนเสน</span></button>
+        <button class="tab-btn" data-tab="heating">Heating a test tube<span class="lang-th">การให้ความร้อนหลอดทดลอง</span></button>
+      </div>
+
+      <div class="tab-panel is-active" data-tab-panel="meniscus">
+        <div class="step-list">
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <div><h4>Set the cylinder on a flat surface<span class="lang-th">วางกระบอกตวงบนพื้นผิวเรียบ</span></h4><p>Reading it while tilted or held in the air makes the volume inaccurate.<span class="lang-th">การอ่านขณะเอียงหรือถือไว้ในอากาศจะทำให้ปริมาตรที่อ่านได้ไม่ถูกต้อง</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <div><h4>Lower your eye to liquid level<span class="lang-th">ลดระดับตาให้อยู่ในระดับเดียวกับของเหลว</span></h4><p>Looking down or up at the scale causes parallax error — a few degrees off can shift the reading.<span class="lang-th">การมองลงหรือมองขึ้นที่มาตราส่วนจะทำให้เกิดความผิดพลาดจากพารัลแลกซ์ — มุมมองที่เบี่ยงไปเพียงไม่กี่องศาก็เปลี่ยนค่าที่อ่านได้</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <div><h4>Read the bottom of the curve<span class="lang-th">อ่านค่าที่ส่วนล่างของส่วนโค้ง</span></h4><p>Most liquids form a concave meniscus; surface tension pulls the edges up, so the bottom of the curve is the true level.<span class="lang-th">ของเหลวส่วนใหญ่จะเกิดเมนิสคัสเว้า แรงตึงผิวดึงขอบขึ้น ดังนั้นส่วนล่างของส่วนโค้งจึงเป็นระดับที่แท้จริง</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">4</span>
+            <div><h4>Record one estimated digit<span class="lang-th">บันทึกตัวเลขประมาณหนึ่งหลัก</span></h4><p>Write the volume to one decimal place past the smallest marked line — e.g. 24.5 mL, not "about 25."<span class="lang-th">เขียนปริมาตรโดยประมาณหนึ่งตำแหน่งทศนิยมเกินขีดที่เล็กที่สุด เช่น 24.5 mL ไม่ใช่ "ประมาณ 25"</span></p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-tab-panel="burner">
+        <div class="step-list">
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <div><h4>Tie back hair, put on goggles<span class="lang-th">มัดผมให้เรียบร้อยและสวมแว่นตานิรภัย</span></h4><p>Open flames plus loose hair or unprotected eyes are one of the most common causes of lab injury.<span class="lang-th">เปลวไฟเปิดร่วมกับผมที่ปล่อยสยายหรือดวงตาที่ไม่มีการป้องกันเป็นสาเหตุที่พบบ่อยที่สุดของการบาดเจ็บในห้องปฏิบัติการ</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <div><h4>Check the tubing, close the air hole<span class="lang-th">ตรวจสายยางและปิดช่องอากาศ</span></h4><p>Starting with the air hole closed gives a smaller, more controlled flame to begin with.<span class="lang-th">การเริ่มต้นโดยปิดช่องอากาศจะให้เปลวไฟที่เล็กและควบคุมได้ดีกว่าในตอนแรก</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <div><h4>Have your ignition source ready first<span class="lang-th">เตรียมแหล่งจุดไฟให้พร้อมก่อน</span></h4><p>Light the striker before turning on the gas, so gas never builds up unburned.<span class="lang-th">จุดเครื่องจุดไฟก่อนเปิดแก๊ส เพื่อไม่ให้แก๊สสะสมโดยไม่ถูกเผาไหม้</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">4</span>
+            <div><h4>Open the gas, then adjust the air hole<span class="lang-th">เปิดแก๊ส แล้วปรับช่องอากาศ</span></h4><p>A steady blue flame means complete combustion; a flickering yellow flame means it needs more air.<span class="lang-th">เปลวไฟสีน้ำเงินที่นิ่งหมายถึงการเผาไหม้สมบูรณ์ ส่วนเปลวไฟสีเหลืองที่กระพือหมายถึงต้องการอากาศเพิ่ม</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">5</span>
+            <div><h4>Never leave it unattended<span class="lang-th">ห้ามทิ้งไว้โดยไม่มีคนดูแล</span></h4><p>Turn it down to a low, yellow safety flame if you need to step away briefly.<span class="lang-th">ปรับให้เป็นเปลวไฟนิรภัยสีเหลืองขนาดเล็กหากต้องออกไปชั่วครู่</span></p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-tab-panel="heating">
+        <div class="step-list">
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <div><h4>Use a clamp or tongs, never your hand<span class="lang-th">ใช้ที่จับหรือคีม ห้ามใช้มือเปล่า</span></h4><p>Glass reaches a dangerous temperature well before it looks any different.<span class="lang-th">แก้วร้อนถึงระดับอันตรายก่อนที่จะดูแตกต่างไปจากปกติ</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <div><h4>Point the open end away from people<span class="lang-th">หันปลายเปิดออกจากผู้คน</span></h4><p>Sudden boiling ("bumping") can eject hot liquid out of the tube without warning.<span class="lang-th">การเดือดกะทันหัน ("bumping") สามารถพ่นของเหลวร้อนออกจากหลอดได้โดยไม่มีการเตือน</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <div><h4>Keep the tube moving through the flame<span class="lang-th">เคลื่อนหลอดผ่านเปลวไฟตลอดเวลา</span></h4><p>Constant gentle motion spreads the heat evenly and helps prevent the glass from cracking.<span class="lang-th">การเคลื่อนไหวอย่างนุ่มนวลตลอดเวลาช่วยกระจายความร้อนให้สม่ำเสมอและช่วยป้องกันแก้วแตก</span></p></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">4</span>
+            <div><h4>Heat the side, not the bottom<span class="lang-th">ให้ความร้อนที่ด้านข้าง ไม่ใช่ด้านล่าง</span></h4><p>For liquids, this reduces the chance of a sudden, violent boil-over.<span class="lang-th">สำหรับของเหลว วิธีนี้ช่วยลดโอกาสที่จะเดือดพล่านอย่างรุนแรงกะทันหัน</span></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">When something goes wrong<span class="lang-th">เมื่อมีสิ่งผิดพลาดเกิดขึ้น</span></p>
+      <h2>Emergency procedures<span class="lang-th">ขั้นตอนฉุกเฉิน</span></h2>
+      <p>Knowing where these are and how to use them before an emergency happens is what makes them useful during one.<span class="lang-th">การรู้ว่าสิ่งเหล่านี้อยู่ที่ไหนและวิธีใช้ก่อนเกิดเหตุฉุกเฉิน คือสิ่งที่ทำให้มันมีประโยชน์เมื่อเกิดเหตุขึ้นจริง</span></p>
+    </div>
+    <div class="grid-4">
+      <div class="card reveal" style="text-align:center;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" style="width:40px;height:40px;margin:0 auto 12px;"><circle cx="12" cy="9" r="3.2"/><path d="M5 9c2-3 5-4 7-4s5 1 7 4M5 9c0 4 3 6 7 8M19 9c0 4-3 6-7 8" stroke-linecap="round"/></svg>
+        <h4 style="font-size:.96rem;">Eyewash station<span class="lang-th">สถานีล้างตา</span></h4>
+        <p style="color:var(--ink-soft);font-size:.86rem;">Flush continuously for at least 15 minutes, holding eyelids open, then get medical help.<span class="lang-th">ล้างตาอย่างต่อเนื่องอย่างน้อย 15 นาที โดยเปิดเปลือกตาไว้ จากนั้นไปพบแพทย์</span></p>
+      </div>
+      <div class="card reveal" style="text-align:center;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" style="width:40px;height:40px;margin:0 auto 12px;"><path d="M12 3v4M5 9c0-2 3-3 7-3s7 1 7 3" stroke-linecap="round"/><path d="M5 9l2 11h10l2-11" stroke-linejoin="round"/><path d="M9 13v4M15 13v4" stroke-linecap="round"/></svg>
+        <h4 style="font-size:.96rem;">Safety shower<span class="lang-th">ฝักบัวนิรภัย</span></h4>
+        <p style="color:var(--ink-soft);font-size:.86rem;">For large-area chemical contact, use it immediately and remove contaminated clothing.<span class="lang-th">หากสารเคมีสัมผัสบริเวณกว้าง ใช้ฝักบัวนิรภัยทันทีและถอดเสื้อผ้าที่เปื้อนสารเคมีออก</span></p>
+      </div>
+      <div class="card reveal" style="text-align:center;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" style="width:40px;height:40px;margin:0 auto 12px;"><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M8 7h8l1 14a2 2 0 01-2 2H9a2 2 0 01-2-2L8 7z" stroke-linejoin="round"/><line x1="12" y1="12" x2="12" y2="18" stroke-linecap="round"/></svg>
+        <h4 style="font-size:.96rem;">Fire extinguisher (PASS)<span class="lang-th">เครื่องดับเพลิง (PASS)</span></h4>
+        <p style="color:var(--ink-soft);font-size:.86rem;"><strong>P</strong>ull the pin, <strong>A</strong>im low, <strong>S</strong>queeze the handle, <strong>S</strong>weep side to side.<span class="lang-th">ดึงสลัก เล็งต่ำ บีบด้ามจับ แล้วกวาดไปด้านข้าง</span></p>
+      </div>
+      <div class="card reveal" style="text-align:center;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" style="width:40px;height:40px;margin:0 auto 12px;"><circle cx="12" cy="14" r="7"/><path d="M12 7V4M9 4h6" stroke-linecap="round"/></svg>
+        <h4 style="font-size:.96rem;">Spill response<span class="lang-th">การจัดการสารหก</span></h4>
+        <p style="color:var(--ink-soft);font-size:.86rem;">Alert others, contain it only if trained to, and follow the SDS for cleanup and disposal.<span class="lang-th">แจ้งเตือนผู้อื่น ควบคุมพื้นที่เฉพาะเมื่อได้รับการฝึกมาแล้ว และปฏิบัติตาม SDS ในการทำความสะอาดและกำจัด</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" style="background:var(--white);border-top:1px solid var(--line);">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Apply it<span class="lang-th">นำไปใช้</span></p>
+      <h2>Check your understanding<span class="lang-th">ตรวจสอบความเข้าใจของคุณ</span></h2>
+      <p>Five quick questions — pick an answer to see instant feedback.<span class="lang-th">คำถามสั้น ๆ ห้าข้อ — เลือกคำตอบเพื่อดูผลตอบรับทันที</span></p>
+    </div>
+    <div class="quiz reveal">
+
+      <div class="quiz-q">
+        <h4>1. A reagent bottle shows a flame pictogram. What does that mean?<span class="lang-th">1. ขวดสารเคมีมีสัญลักษณ์เปลวไฟ หมายความว่าอย่างไร</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="true" data-feedback="Right — the flame pictogram means flammable, so it should be kept away from sparks, flames, and heat." data-feedback-th="ถูกต้อง — สัญลักษณ์เปลวไฟหมายถึงไวไฟ จึงควรเก็บให้ห่างจากประกายไฟ เปลวไฟ และความร้อน">It's flammable and should be kept away from heat or open flames.<span class="lang-th">เป็นสารไวไฟ ควรเก็บให้ห่างจากความร้อนหรือเปลวไฟ</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — that's not what this symbol communicates. Pictograms are about physical and health hazards, not disposal or storage temperature." data-feedback-th="ไม่ถูกต้อง — นั่นไม่ใช่สิ่งที่สัญลักษณ์นี้สื่อ สัญลักษณ์เกี่ยวกับอันตรายทางกายภาพและสุขภาพ ไม่ใช่การกำจัดหรืออุณหภูมิการเก็บรักษา">It's safe to pour down the drain when finished.<span class="lang-th">สามารถเทลงท่อระบายน้ำได้เมื่อใช้เสร็จ</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — a flame symbol means flammable, not that the substance needs refrigeration." data-feedback-th="ไม่ถูกต้อง — สัญลักษณ์เปลวไฟหมายถึงไวไฟ ไม่ได้หมายถึงต้องแช่เย็น">It needs to be refrigerated.<span class="lang-th">ต้องเก็บในที่เย็น</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — radioactive materials use a different (trefoil) symbol, not the flame pictogram." data-feedback-th="ไม่ถูกต้อง — สารกัมมันตรังสีใช้สัญลักษณ์อื่น (รูปสามแฉก) ไม่ใช่สัญลักษณ์เปลวไฟ">It's radioactive.<span class="lang-th">เป็นสารกัมมันตรังสี</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-q">
+        <h4>2. Why do you read the bottom of the meniscus when measuring a liquid's volume?<span class="lang-th">2. ทำไมต้องอ่านค่าที่ส่วนล่างของเมนิสคัสเมื่อวัดปริมาตรของเหลว</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — speed isn't the reason; accuracy is." data-feedback-th="ไม่ถูกต้อง — ไม่ใช่เรื่องความเร็ว แต่เป็นเรื่องความแม่นยำ">Because it's faster than reading the top.<span class="lang-th">เพราะเร็วกว่าการอ่านที่ส่วนบน</span></button>
+          <button class="quiz-option" data-correct="true" data-feedback="Right — surface tension curves the liquid surface upward at the edges, so the bottom of that curve is the true liquid level." data-feedback-th="ถูกต้อง — แรงตึงผิวทำให้ผิวของเหลวโค้งขึ้นที่ขอบ ดังนั้นส่วนล่างของส่วนโค้งจึงเป็นระดับของเหลวที่แท้จริง">Surface tension curves the liquid's surface, so the bottom of the curve is the true level.<span class="lang-th">แรงตึงผิวทำให้ผิวของเหลวโค้ง ดังนั้นส่วนล่างของส่วนโค้งจึงเป็นระดับที่แท้จริง</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — graduations run the full length of the cylinder." data-feedback-th="ไม่ถูกต้อง — ขีดมาตราส่วนมีตลอดความยาวของกระบอกตวง">Because the markings are only printed near the bottom.<span class="lang-th">เพราะขีดมาตราส่วนพิมพ์อยู่เฉพาะใกล้ส่วนล่างเท่านั้น</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — which part of the curve you read changes the reading by a noticeable amount." data-feedback-th="ไม่ถูกต้อง — ส่วนของส่วนโค้งที่คุณอ่านมีผลต่อค่าที่อ่านได้อย่างเห็นได้ชัด">It doesn't really matter which part you read.<span class="lang-th">จะอ่านส่วนไหนก็ไม่ต่างกัน</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-q">
+        <h4>3. What's the safest way to heat a liquid in a test tube over a flame?<span class="lang-th">3. วิธีที่ปลอดภัยที่สุดในการให้ความร้อนของเหลวในหลอดทดลองเหนือเปลวไฟคืออะไร</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — never point an open tube at another person; sudden boiling can eject hot liquid." data-feedback-th="ไม่ถูกต้อง — ห้ามหันปลายเปิดของหลอดไปทางผู้อื่น การเดือดกะทันหันอาจพ่นของเหลวร้อนออกมาได้">Point the open end at a partner so you can both observe.<span class="lang-th">หันปลายเปิดไปทางคู่ของคุณเพื่อให้สังเกตได้ทั้งสองคน</span></button>
+          <button class="quiz-option" data-correct="true" data-feedback="Right — pointing it away from people and moving it through the flame spreads heat evenly and keeps everyone safe if it boils over suddenly." data-feedback-th="ถูกต้อง — การหันออกจากผู้คนและเคลื่อนหลอดผ่านเปลวไฟช่วยกระจายความร้อนสม่ำเสมอและทำให้ทุกคนปลอดภัยหากเดือดพล่านกะทันหัน">Point the open end away from people and keep the tube moving through the flame.<span class="lang-th">หันปลายเปิดออกจากผู้คนและเคลื่อนหลอดผ่านเปลวไฟตลอดเวลา</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — glass gets dangerously hot well before it looks different; always use a clamp or tongs." data-feedback-th="ไม่ถูกต้อง — แก้วร้อนถึงระดับอันตรายก่อนที่จะดูแตกต่างไปจากปกติ ควรใช้ที่จับหรือคีมเสมอ">Hold the tube with your fingers near the flame for better control.<span class="lang-th">ใช้นิ้วจับหลอดใกล้เปลวไฟเพื่อควบคุมได้ดีขึ้น</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — heating only the bottom while holding it still increases the risk of a sudden, violent boil-over." data-feedback-th="ไม่ถูกต้อง — การให้ความร้อนเฉพาะส่วนล่างโดยถือหลอดนิ่ง ๆ จะเพิ่มความเสี่ยงที่จะเดือดพล่านอย่างรุนแรงกะทันหัน">Heat only the very bottom and keep the tube perfectly still.<span class="lang-th">ให้ความร้อนเฉพาะส่วนล่างสุดและถือหลอดให้นิ่งที่สุด</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-q">
+        <h4>4. A chemical splashes on a classmate's arm. What's the first thing they should do?<span class="lang-th">4. สารเคมีกระเด็นมาที่แขนของเพื่อนร่วมชั้น สิ่งแรกที่ควรทำคืออะไร</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — wiping doesn't remove a chemical effectively and wastes time before rinsing." data-feedback-th="ไม่ถูกต้อง — การเช็ดไม่สามารถกำจัดสารเคมีได้อย่างมีประสิทธิภาพ และเสียเวลาก่อนการล้างน้ำ">Wipe it off with a paper towel and keep working.<span class="lang-th">เช็ดออกด้วยกระดาษทิชชู่แล้วทำงานต่อ</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — waiting risks the chemical doing more damage the longer it stays on skin." data-feedback-th="ไม่ถูกต้อง — การรอจะเพิ่มความเสี่ยงที่สารเคมีจะสร้างความเสียหายมากขึ้นเมื่อสัมผัสผิวหนังนานขึ้น">Wait to see if it causes irritation first.<span class="lang-th">รอดูก่อนว่าจะระคายเคืองหรือไม่</span></button>
+          <button class="quiz-option" data-correct="true" data-feedback="Right — rinse immediately (use the safety shower for a large area) and notify the teacher right away." data-feedback-th="ถูกต้อง — ล้างด้วยน้ำทันที (ใช้ฝักบัวนิรภัยหากบริเวณกว้าง) และแจ้งครูทันที">Rinse the area immediately with water and tell the teacher right away.<span class="lang-th">ล้างบริเวณนั้นด้วยน้ำทันทีและแจ้งครูทันที</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — covering it traps the chemical against the skin instead of removing it." data-feedback-th="ไม่ถูกต้อง — การปิดบริเวณนั้นจะกักสารเคมีไว้ที่ผิวหนังแทนที่จะกำจัดออก">Cover the area with a glove.<span class="lang-th">คลุมบริเวณนั้นด้วยถุงมือ</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-q">
+        <h4>5. You need to measure exactly 24.5 mL of a solution. Which tool fits best?<span class="lang-th">5. คุณต้องวัดสารละลายให้ได้ 24.5 mL อย่างแม่นยำ เครื่องมือใดเหมาะสมที่สุด</span></h4>
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — a beaker's markings are too widely spaced for a precise reading like 24.5 mL." data-feedback-th="ไม่ถูกต้อง — ขีดมาตราส่วนของบีกเกอร์ห่างกันเกินไปสำหรับการอ่านค่าที่แม่นยำอย่าง 24.5 mL">A beaker, since it's the largest container.<span class="lang-th">บีกเกอร์ เพราะเป็นภาชนะที่ใหญ่ที่สุด</span></button>
+          <button class="quiz-option" data-correct="true" data-feedback="Right — a graduated cylinder's fine markings make it the right tool for reading a specific volume precisely." data-feedback-th="ถูกต้อง — ขีดมาตราส่วนละเอียดของกระบอกตวงทำให้เป็นเครื่องมือที่เหมาะสมสำหรับการอ่านปริมาตรที่แม่นยำ">A graduated cylinder, since its fine markings allow a precise reading.<span class="lang-th">กระบอกตวง เพราะขีดมาตราส่วนละเอียดช่วยให้อ่านค่าได้แม่นยำ</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — a test tube usually isn't marked with precise volume graduations." data-feedback-th="ไม่ถูกต้อง — หลอดทดลองมักไม่มีขีดมาตราส่วนปริมาตรที่แม่นยำ">A test tube, since it's the smallest container.<span class="lang-th">หลอดทดลอง เพราะเป็นภาชนะที่เล็กที่สุด</span></button>
+          <button class="quiz-option" data-correct="false" data-feedback="Not quite — an Erlenmeyer flask is built for safe mixing, not precise volume measurement." data-feedback-th="ไม่ถูกต้อง — ขวดรูปชมพู่ถูกออกแบบมาเพื่อการผสมอย่างปลอดภัย ไม่ใช่การวัดปริมาตรที่แม่นยำ">An Erlenmeyer flask, since it has a narrow neck.<span class="lang-th">ขวดรูปชมพู่ เพราะมีคอขวดแคบ</span></button>
+        </div>
+        <p class="quiz-feedback"></p>
+      </div>
+
+      <div class="quiz-score" data-quiz-score></div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="module-nav">
+    <a href="index.html">← Back to overview<span class="lang-th">← กลับไปหน้าภาพรวม</span></a>
+    <a href="atoms-elements.html">Next: Atoms &amp; Properties of Elements →<span class="lang-th">บทต่อไป: อะตอมและสมบัติของธาตุ →</span></a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>Visual Chemistry — Module 1: Lab Safety &amp; Skills<span class="lang-th">ชุดสื่อการสอนวิชาเคมี — บทเรียนที่ 1: ความปลอดภัยและทักษะในห้องปฏิบัติการ</span></span>
+    <span><a href="atoms-elements.html">Continue to Module 2 →<span class="lang-th">ไปยังบทเรียนที่ 2 →</span></a></span>
+  </div>
+</footer>
+
+<script src="assets/shared.js"></script>
+</body>
+</html>

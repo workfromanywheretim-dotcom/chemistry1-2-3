@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visual Chemistry · Foundations You Can See</title>
+<meta name="description" content="Visual, conceptual chemistry lessons covering Lab Safety and Skills, Atoms and Properties of Elements, and Chemical Bonding — built for understanding and practical application.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6M10 3v6.2L5.5 17a2 2 0 001.7 3h9.6a2 2 0 001.7-3L14 9.2V3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-en">Visual Chemistry</span>
+        <span class="brand-sub">See it · Understand it · Apply it</span>
+      </span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main menu">
+      <a href="index.html" class="is-active">Home<span class="lang-th">หน้าแรก</span></a>
+      <a href="lab-safety.html">Lab Safety<span class="lang-th">ความปลอดภัยในห้องปฏิบัติการ</span></a>
+      <a href="atoms-elements.html">Atoms &amp; Elements<span class="lang-th">อะตอมและธาตุ</span></a>
+      <a href="chemical-bonding.html">Chemical Bonding<span class="lang-th">พันธะเคมี</span></a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile menu">
+    <a href="index.html">Home<span class="lang-th">หน้าแรก</span></a>
+    <a href="lab-safety.html">Lab Safety<span class="lang-th">ความปลอดภัยในห้องปฏิบัติการ</span></a>
+    <a href="atoms-elements.html">Atoms &amp; Elements<span class="lang-th">อะตอมและธาตุ</span></a>
+    <a href="chemical-bonding.html">Chemical Bonding<span class="lang-th">พันธะเคมี</span></a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow eyebrow-light">A visual, conceptual chemistry series<span class="lang-th">สื่อการเรียนเคมีเชิงภาพและแนวคิด</span></p>
+      <h1>Foundations you can see — and actually use.<span class="lang-th">พื้นฐานที่มองเห็นได้ — และนำไปใช้ได้จริง</span></h1>
+      <p class="hero-lead">Three core modules built around diagrams, simulations, and short checks for understanding, so the ideas stick well beyond the test.<span class="lang-th">สามบทเรียนหลักที่สร้างจากแผนภาพ การจำลอง และแบบทดสอบสั้น ๆ เพื่อความเข้าใจ ให้แนวคิดติดตัวไปนานกว่าแค่สอบผ่าน</span></p>
+      <div class="hero-actions">
+        <a href="lab-safety.html" class="btn btn-primary">Start with Lab Safety<span class="lang-th">เริ่มจากความปลอดภัยในห้องปฏิบัติการ</span></a>
+        <a href="#modules" class="btn btn-outline-light">See all modules<span class="lang-th">ดูทุกบทเรียน</span></a>
+      </div>
+      <div class="hero-tags">
+        <span class="hero-tag">Interactive diagrams<span class="lang-th">แผนภาพโต้ตอบได้</span></span>
+        <span class="hero-tag">Build-your-own atom<span class="lang-th">สร้างอะตอมของคุณเอง</span></span>
+        <span class="hero-tag">Self-check quizzes<span class="lang-th">แบบทดสอบตรวจสอบตัวเอง</span></span>
+      </div>
+    </div>
+    <div class="card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:#fff;">
+      <p class="eyebrow eyebrow-light" style="margin-bottom:.6em;">Why this approach<span class="lang-th">ทำไมต้องเรียนแบบนี้</span></p>
+      <p style="color:rgba(246,250,249,.85);margin-bottom:1em;">Chemistry clicks when you can <em>see</em> what's happening at the particle level, not just memorize rules. Every module pairs a visual model with a hands-on check.<span class="lang-th">เคมีจะเข้าใจง่ายขึ้นเมื่อคุณ<em>มองเห็น</em>สิ่งที่เกิดขึ้นในระดับอนุภาค ไม่ใช่แค่จำกฎไปสอบ แต่ละบทเรียนจับคู่แบบจำลองเชิงภาพกับแบบทดสอบลงมือทำ</span></p>
+      <ul style="display:grid;gap:10px;">
+        <li style="display:flex;gap:10px;color:rgba(246,250,249,.85);font-size:.92rem;"><strong style="color:var(--amber);">See it —</strong> diagrams and simulations replace walls of text.<span class="lang-th"><strong style="color:var(--amber);">มองเห็น —</strong> แผนภาพและการจำลองแทนที่ข้อความยาวเหยียด</span></li>
+        <li style="display:flex;gap:10px;color:rgba(246,250,249,.85);font-size:.92rem;"><strong style="color:var(--amber);">Understand it —</strong> short explanations connect the visual to the concept.<span class="lang-th"><strong style="color:var(--amber);">เข้าใจ —</strong> คำอธิบายสั้น ๆ เชื่อมภาพเข้ากับแนวคิด</span></li>
+        <li style="display:flex;gap:10px;color:rgba(246,250,249,.85);font-size:.92rem;"><strong style="color:var(--amber);">Apply it —</strong> quizzes and real scenarios test the transfer.<span class="lang-th"><strong style="color:var(--amber);">นำไปใช้ —</strong> แบบทดสอบและสถานการณ์จริงช่วยตรวจสอบการนำไปใช้</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MODULES -->
+<section id="modules">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Three modules, one foundation<span class="lang-th">สามบทเรียน หนึ่งพื้นฐาน</span></p>
+      <h2>Pick a module to start<span class="lang-th">เลือกบทเรียนเพื่อเริ่มต้น</span></h2>
+      <p>Designed to be taken in order — safety and skills first, then the particles chemistry is built from, then how those particles connect.<span class="lang-th">ออกแบบให้เรียนตามลำดับ — เริ่มจากความปลอดภัยและทักษะก่อน จากนั้นอนุภาคที่เคมีถูกสร้างขึ้นจาก แล้วจึงดูว่าอนุภาคเหล่านั้นเชื่อมต่อกันอย่างไร</span></p>
+    </div>
+    <div class="module-grid">
+
+      <div class="module-card reveal">
+        <span class="module-icon mi-safety" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>1. Lab Safety &amp; Skills<span class="lang-th">ความปลอดภัยและทักษะในห้องปฏิบัติการ</span></h3>
+        <p class="desc">The hazard symbols, protective gear, equipment, and habits every chemist needs before touching a single chemical.<span class="lang-th">สัญลักษณ์อันตราย อุปกรณ์ป้องกัน เครื่องมือ และข้อปฏิบัติที่นักเคมีทุกคนต้องรู้ก่อนสัมผัสสารเคมีแม้แต่ชนิดเดียว</span></p>
+        <ul class="module-list">
+          <li>GHS hazard pictograms (flip cards)<span class="lang-th">สัญลักษณ์อันตราย GHS (การ์ดพลิก)</span></li>
+          <li>PPE hotspot diagram<span class="lang-th">แผนภาพจุดสำคัญของอุปกรณ์ป้องกันส่วนบุคคล (PPE)</span></li>
+          <li>Equipment ID and core techniques<span class="lang-th">การระบุอุปกรณ์และเทคนิคพื้นฐาน</span></li>
+          <li>Emergency response basics<span class="lang-th">พื้นฐานการตอบสนองเหตุฉุกเฉิน</span></li>
+        </ul>
+        <a href="lab-safety.html" class="btn btn-outline btn-sm">Start module<span class="lang-th">เริ่มบทเรียน</span></a>
+      </div>
+
+      <div class="module-card reveal">
+        <span class="module-icon mi-atoms" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="2.1" fill="currentColor" stroke="none"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"/></svg>
+        </span>
+        <h3>2. Atoms &amp; Properties of Elements<span class="lang-th">อะตอมและสมบัติของธาตุ</span></h3>
+        <p class="desc">Build atoms particle by particle, explore a live periodic table, and see why properties repeat in patterns.<span class="lang-th">สร้างอะตอมทีละอนุภาค สำรวจตารางธาตุแบบโต้ตอบ และดูว่าทำไมสมบัติของธาตุจึงเกิดเป็นรูปแบบซ้ำ</span></p>
+        <ul class="module-list">
+          <li>Build-an-atom simulator<span class="lang-th">เครื่องมือจำลองการสร้างอะตอม</span></li>
+          <li>Interactive periodic table (periods 1–4)<span class="lang-th">ตารางธาตุแบบโต้ตอบ (คาบที่ 1–4)</span></li>
+          <li>Atomic radius &amp; electronegativity trends<span class="lang-th">แนวโน้มรัศมีอะตอมและอิเล็กโทรเนกาติวิตี</span></li>
+          <li>Isotopes and ions<span class="lang-th">ไอโซโทปและไอออน</span></li>
+        </ul>
+        <a href="atoms-elements.html" class="btn btn-outline btn-sm">Start module<span class="lang-th">เริ่มบทเรียน</span></a>
+      </div>
+
+      <div class="module-card reveal">
+        <span class="module-icon mi-bonds" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="12" r="3.4"/><circle cx="17" cy="12" r="3.4"/><path d="M10.2 12h3.6" stroke-linecap="round"/></svg>
+        </span>
+        <h3>3. Chemical Bonding<span class="lang-th">พันธะเคมี</span></h3>
+        <p class="desc">Why atoms bond at all, and how ionic, covalent, and metallic bonds give materials their properties.<span class="lang-th">ทำไมอะตอมจึงเกิดพันธะ และพันธะไอออนิก โคเวเลนต์ และโลหะให้สมบัติแก่วัสดุได้อย่างไร</span></p>
+        <ul class="module-list">
+          <li>Electron transfer &amp; sharing animations<span class="lang-th">แอนิเมชันการถ่ายโอนและใช้อิเล็กตรอนร่วมกัน</span></li>
+          <li>Build-a-bond predictor<span class="lang-th">เครื่องมือทำนายพันธะ</span></li>
+          <li>Ionic vs covalent vs metallic comparison<span class="lang-th">เปรียบเทียบพันธะไอออนิก โคเวเลนต์ และโลหะ</span></li>
+          <li>Property-based scenario quiz<span class="lang-th">แบบทดสอบสถานการณ์ตามสมบัติของสาร</span></li>
+        </ul>
+        <a href="chemical-bonding.html" class="btn btn-outline btn-sm">Start module<span class="lang-th">เริ่มบทเรียน</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section class="section-tight">
+  <div class="container">
+    <div class="grid-3">
+      <div class="card reveal">
+        <h4>Visual-first<span class="lang-th">เน้นภาพเป็นหลัก</span></h4>
+        <p style="color:var(--ink-soft);font-size:.92rem;margin:0;">Every concept gets a diagram, animation, or simulation before any definition. You see the model, then name it.<span class="lang-th">ทุกแนวคิดจะมีแผนภาพ แอนิเมชัน หรือการจำลองก่อนคำนิยาม คุณจะเห็นแบบจำลองก่อน แล้วจึงรู้จักชื่อของมัน</span></p>
+      </div>
+      <div class="card reveal">
+        <h4>Conceptual, not just factual<span class="lang-th">เน้นแนวคิด ไม่ใช่แค่ข้อเท็จจริง</span></h4>
+        <p style="color:var(--ink-soft);font-size:.92rem;margin:0;">Lessons explain <em>why</em> a pattern holds — why metals conduct, why noble gases don't react — so the facts don't need rote memorizing.<span class="lang-th">บทเรียนอธิบาย<em>เหตุผล</em>ที่อยู่เบื้องหลังรูปแบบต่าง ๆ — ทำไมโลหะนำไฟฟ้าได้ ทำไมแก๊สมีตระกูลไม่ทำปฏิกิริยา — จึงไม่ต้องท่องจำข้อเท็จจริงโดยไม่เข้าใจ</span></p>
+      </div>
+      <div class="card reveal">
+        <h4>Built to apply<span class="lang-th">ออกแบบให้นำไปใช้ได้จริง</span></h4>
+        <p style="color:var(--ink-soft);font-size:.92rem;margin:0;">Each module ends with a short, instantly-graded check that asks you to use the idea, not just recall it.<span class="lang-th">แต่ละบทเรียนปิดท้ายด้วยแบบทดสอบสั้น ๆ ที่ตรวจให้คะแนนทันที ซึ่งให้คุณนำแนวคิดไปใช้ ไม่ใช่แค่จำได้</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>Visual Chemistry — instructional media series<span class="lang-th">ชุดสื่อการสอนวิชาเคมี</span></span>
+    <span>Module 1 of 3: <a href="lab-safety.html">Lab Safety &amp; Skills →<span class="lang-th">บทเรียนที่ 1 จาก 3: ความปลอดภัยและทักษะในห้องปฏิบัติการ →</span></a></span>
+  </div>
+</footer>
+
+<script src="assets/shared.js"></script>
+</body>
+</html>
